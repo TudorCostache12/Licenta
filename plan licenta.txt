@@ -1,0 +1,35 @@
+Aplicate web pentru fitness
+Aplicatie modulara
+Frontend : Probabil Javascript, Typescript, React
+Backend: -Baza de date SQL/noSQL
+	 -Alte prelucrari: Node.js, AI
+
+Document: domeniu de interes, functionalitati, related work:ce se gaseste in momentul de fata pe piata
+
+Exemple aplicatii:
+	Fitify(app mobila): -planuri de workout facute cu ajutorul AI pe baza unor intrebari, date introduse de useri
+		-idei de meal prep tot bazate pe preferintele userilor
+		-workouturi separate in functie de preferinte pe moment: Putere, cardio, HIIT, etc.
+		-pagina de profil cu statistici si evolutia userului
+
+	Samsung Health(app mobila): -Masurarea automata de pasi, calorii cu alegerea unor workouturi(mers, alergat, bicicleta, etc), tracker de somn, calorii etc.
+				    -planuri de workout cu dificultati si functii diferite
+				    -pagina de profil cu statistici si evolutia userului
+
+	myfitnesspal(app web si mobil) -Workouturi personalizate
+				       -Idei de meal prep pentru goluri si diete diferitte
+				       -Calorie tracking pentru mancare cu identificare prin camera telefonului si introducere manuala
+				       -pagina de profil cu statistici si evolutia userului
+				       -"pagina" de album in care user completeaza cu mancarea si gramajul pentru a se calcula caloriile ramase
+	
+	Caliber(app mobila) -Workouturi personalizate cu detalii privind muschii lucrati
+			    -calorie tracker
+
+
+
+Facilitati pe care le-as folosi:
+	-metrici si masuratori pe baza datelor introduse de useri
+	-pagina de profil cu statistici si evolutia userului
+	-calorie tracking cu alegerea unor workouturi(mers, alergat, bicicleta, etc) cu tracker (asta daca e APLICATIE MOBILA)
+	-Calorie tracking pentru mancare cu identificare prin camera telefonului si introducere manuala
+	-Workouturi personalizate cu detalii privind muschii lucrati

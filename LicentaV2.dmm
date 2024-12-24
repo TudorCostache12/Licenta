@@ -1,0 +1,1817 @@
+{
+	"tables": {
+		"05952d01-7377-49c4-ada6-bcea6e4815bf": {
+			"id": "05952d01-7377-49c4-ada6-bcea6e4815bf",
+			"visible": true,
+			"name": "Utilizatori",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "61117c5f-024f-41a9-b76b-7fea3ba9fe36",
+					"name": "id_user",
+					"datatype": "int",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "b441d00a-792f-4e8e-96fa-bffc0d7cc275",
+					"name": "username",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "19ef3cbd-b61b-404e-9958-3739a53f870a",
+					"name": "mail",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "333013b9-187c-4cee-9899-17b5b7a35fe8",
+					"name": "parola",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "0bf6958d-529b-4db4-a203-89e8b83e70bb",
+					"name": "varsta",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "6e3fc309-3992-4c36-b981-2979aea16d8c",
+					"name": "sex",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "f9405624-993c-4bd6-9822-b125f8009cb1",
+					"name": "inaltime",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"9dc8393f-b7db-468c-8b40-0b822bcb4fdb",
+				"70acd04d-f753-443b-b270-dcdc478d8c5d"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "cbefa4c9-ff38-4ce5-8924-4649c8080d45",
+					"name": "table1_pkey",
+					"isPk": true,
+					"mssql": {
+						"clustered": true
+					},
+					"cols": [
+						{
+							"id": "a2f39e89-e2e3-42a8-9faa-3fb3767bb378",
+							"colid": "61117c5f-024f-41a9-b76b-7fea3ba9fe36"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"mssql": {
+				"schema": ""
+			}
+		},
+		"584fa160-2560-40f4-afa0-fc2b60525e44": {
+			"id": "584fa160-2560-40f4-afa0-fc2b60525e44",
+			"visible": true,
+			"name": "Analiza_posturii",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "872fb7b3-f2d0-4fcb-af6d-69cd5666d118",
+					"name": "id_analiza",
+					"datatype": "int",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "25f94c24-c7bf-43d6-afa4-978bce3183a9",
+					"name": "id_user",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "6af12ccd-16b6-41be-a74d-b4c403d3199e",
+					"name": "id_lista",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "141f0b6f-cf61-40d1-b672-f2383fdfc6d5",
+					"name": "data_realizat",
+					"datatype": "date",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "ff876ff2-d472-4310-b752-35e36154e277",
+					"name": "tip_analiza",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "3e5b817f-66a3-41f0-8cab-689c78153f0d",
+					"name": "descriere_rezultat",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "fc4b20e0-ed35-4e2b-b139-99ba3750d2fb",
+					"name": "scor_postura",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "c931005f-caf0-4301-8e70-4eaa62bb88c8",
+					"name": "referinta_media_capturata",
+					"datatype": "varbinary",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"9dc8393f-b7db-468c-8b40-0b822bcb4fdb",
+				"3db92899-8d96-4f68-8d5b-93a27389a3a8"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "7df5a577-53af-4fcd-997d-48ce182bb0ed",
+					"name": "table1_pkey1",
+					"isPk": true,
+					"mssql": {
+						"clustered": true
+					},
+					"cols": [
+						{
+							"id": "6467237f-927f-4a15-bbae-07c47b73983f",
+							"colid": "872fb7b3-f2d0-4fcb-af6d-69cd5666d118"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"mssql": {
+				"schema": ""
+			}
+		},
+		"0a4f7102-cfbe-4ff2-a79a-e7d5125aa9d1": {
+			"id": "0a4f7102-cfbe-4ff2-a79a-e7d5125aa9d1",
+			"visible": true,
+			"name": "Jurnal_alimentar",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "d3fd64dc-bad0-47ba-9779-78dbeac8e28e",
+					"name": "id_jurnal",
+					"datatype": "int",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "e2c5c2d2-7fa7-4bb1-862d-6299e6bf5a5d",
+					"name": "id_user",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "d89bfe54-3a5b-442e-9446-667917a15c67",
+					"name": "data",
+					"datatype": "date",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "6eca7d32-aa4a-41c3-9d2f-9ba6f57af519",
+					"name": "calorii_total",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "d7fcb333-4764-44dc-9b7b-78f9c19cc639",
+					"name": "proteine_total",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "0c647924-29fd-4cde-bbc5-70a3491942d1",
+					"name": "carbohidrati_total",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "c040f6c9-bd55-4ace-908d-b6f4e281c9c4",
+					"name": "grasimi_total",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "1ff3c1f1-900a-46e8-88b1-0f2d12cefe5a",
+					"name": "fibre_total",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "5780d285-7b0f-4e2d-8232-e950f941ddce",
+					"name": "masa_corporala",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"70acd04d-f753-443b-b270-dcdc478d8c5d",
+				"3e6d3eb5-aca5-45fa-850f-9b8d1753c868"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "31f0ff02-ca66-4f14-b976-7301702caff4",
+					"name": "table1_pkey2",
+					"isPk": true,
+					"mssql": {
+						"clustered": true
+					},
+					"cols": [
+						{
+							"id": "40d46195-b487-42cc-a677-8cf6b2836d70",
+							"colid": "d3fd64dc-bad0-47ba-9779-78dbeac8e28e"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"mssql": {
+				"schema": ""
+			}
+		},
+		"245caef4-6905-4897-a4dc-a9d4956d52ad": {
+			"id": "245caef4-6905-4897-a4dc-a9d4956d52ad",
+			"visible": true,
+			"name": "Masa",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "3364c9ff-2f79-4ba3-87e3-495ce9d5e2e5",
+					"name": "id_masa",
+					"datatype": "int",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "4a218b4a-a3eb-4e67-9cac-d13836f55797",
+					"name": "id_jurnal",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "d63339b0-66ff-4116-b58e-8dca12c42cc1",
+					"name": "tip_masa",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "4c165d4e-8605-4e89-b6fc-90c6516cdd3b",
+					"name": "calorii",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "565bfdf9-b6db-4187-9f4f-a33b5b5cc730",
+					"name": "proteine",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "8e34f915-59a9-4173-bda7-1c05b5f0468f",
+					"name": "carbohidrati",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "c1d3fa8f-3a34-4991-be5e-3994cc8732eb",
+					"name": "grasimi",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "49e1de5b-3bf9-4075-95be-03c831cfb5b2",
+					"name": "fibre",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"3e6d3eb5-aca5-45fa-850f-9b8d1753c868",
+				"789a062d-ff6d-4e9c-a279-88574fbf0dc2"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "ae868bc6-5dfe-4a9f-9398-c9bb5f37f84d",
+					"name": "table1_pkey3",
+					"isPk": true,
+					"mssql": {
+						"clustered": true
+					},
+					"cols": [
+						{
+							"id": "11050f71-8bb5-4f09-a456-e295b611cff2",
+							"colid": "3364c9ff-2f79-4ba3-87e3-495ce9d5e2e5"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"mssql": {
+				"schema": ""
+			}
+		},
+		"e199c54b-50a5-4f02-b3e1-e89690d18b68": {
+			"id": "e199c54b-50a5-4f02-b3e1-e89690d18b68",
+			"visible": true,
+			"name": "Aliment",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "5b405362-b42f-4666-b3a9-9651f66b9521",
+					"name": "id_aliment",
+					"datatype": "int",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "5c3b58ab-aea5-4e04-b204-7b2c83b3241e",
+					"name": "id_masa",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "7bb8919b-d54a-4c89-baa0-f3f9d8247d6a",
+					"name": "nume",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "1d88a9d4-ce90-4219-ac41-bd49a300adca",
+					"name": "calorii",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "18322bae-b531-4871-91a7-790f3c8c098c",
+					"name": "proteine",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "905551ef-8d0f-44da-b4f9-08aff557f2af",
+					"name": "carbohidrati",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "04f42e3a-54bf-434b-bba5-ea2a173b192d",
+					"name": "grasimi",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "b86b8c03-4568-47a5-a582-20f4c8b0f237",
+					"name": "fibre",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "0dca8ccb-8bd9-44e9-b7f4-198b6a16b2a3",
+					"name": "nr_portii",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "00c145a6-d69d-43ef-91e3-da6162cb185d",
+					"name": "gramaj",
+					"datatype": "float",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"789a062d-ff6d-4e9c-a279-88574fbf0dc2"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "2154c05a-2401-442c-b261-064ae361ac84",
+					"name": "table1_pkey4",
+					"isPk": true,
+					"mssql": {
+						"clustered": true
+					},
+					"cols": [
+						{
+							"id": "64c6e12f-f34b-4383-b267-be74ddc8a547",
+							"colid": "5b405362-b42f-4666-b3a9-9651f66b9521"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"mssql": {
+				"schema": ""
+			}
+		},
+		"a63a39f2-6785-4784-bbda-614750566053": {
+			"id": "a63a39f2-6785-4784-bbda-614750566053",
+			"visible": true,
+			"name": "Lista_exercitii",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "8cbc4556-d602-4ceb-991b-6e951cce27cc",
+					"name": "id_lista",
+					"datatype": "int",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "e92f2bf9-bc21-4a48-bb16-7ebfed1b020d",
+					"name": "id_afectiune",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "2feceaf6-874b-47e9-bb0a-ba8115848376",
+					"name": "descriere",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "d1f05bd2-8959-4e8e-afa6-4d0713d880db",
+					"name": "nr_exercitii",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"3db92899-8d96-4f68-8d5b-93a27389a3a8",
+				"5c741f73-8281-49ff-b3f9-05d6a7250d79"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "87566348-5ac2-47cd-85d8-6b6d69b7ae59",
+					"name": "table1_pkey5",
+					"isPk": true,
+					"mssql": {
+						"clustered": true
+					},
+					"cols": [
+						{
+							"id": "f19f3c1d-9ec5-45e4-a4c6-58d9fcccf8f2",
+							"colid": "8cbc4556-d602-4ceb-991b-6e951cce27cc"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"mssql": {
+				"schema": ""
+			}
+		},
+		"62afded6-074e-44df-9fcb-06fd36e034c6": {
+			"id": "62afded6-074e-44df-9fcb-06fd36e034c6",
+			"visible": true,
+			"name": "Afectiuni",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "e7c264b7-a00e-43ad-a1e0-1ce7d7351c1e",
+					"name": "id_afectiune",
+					"datatype": "int",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "1ef541b8-1dd3-4a3b-ab83-78bcd35a5cb7",
+					"name": "nume",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "8de93b7e-1ea6-4848-99a2-9681a1814188",
+					"name": "descriere",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"b66918e6-4f45-41a2-ab49-3b9417f41dfb",
+				"5c741f73-8281-49ff-b3f9-05d6a7250d79"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "5f9ef8c5-cad0-4fbe-b41b-e26a7117d15b",
+					"name": "table1_pkey6",
+					"isPk": true,
+					"mssql": {
+						"clustered": true
+					},
+					"cols": [
+						{
+							"id": "c360a922-6f55-4a4a-a334-526a43256d36",
+							"colid": "e7c264b7-a00e-43ad-a1e0-1ce7d7351c1e"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"mssql": {
+				"schema": ""
+			}
+		},
+		"dafc571f-c3ee-4a8e-813a-1fad7ae1e86a": {
+			"id": "dafc571f-c3ee-4a8e-813a-1fad7ae1e86a",
+			"visible": true,
+			"name": "Exercitiu",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "c4a7862f-3f03-4367-a25a-baa9f9b99195",
+					"name": "id-exercitiu",
+					"datatype": "int",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "67ab3301-99ca-40ac-9d6b-c0961f3e6660",
+					"name": "nume",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "8fc623d6-40cd-4561-b034-a0f862e66025",
+					"name": "descriere",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "0c9db843-b707-4670-b4e4-3535228036e0",
+					"name": "tracker_inclus(DA/NU)",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "138dafcf-e1a2-46d0-981d-fa33acae4559",
+					"name": "numar_repetitii",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "91952b5b-61f6-4d6e-806f-2ced6f8cb8f9",
+					"name": "referinta_video_demo",
+					"datatype": "varbinary",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"a2a67183-dbbe-4b67-993c-32f8dc5aca0f"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "91d5cc1f-8e10-4e89-85a7-a7ba3fe7707e",
+					"name": "table1_pkey7",
+					"isPk": true,
+					"mssql": {
+						"clustered": true
+					},
+					"cols": [
+						{
+							"id": "5b5f65c2-7bb7-4864-a57e-f6b523b7b243",
+							"colid": "c4a7862f-3f03-4367-a25a-baa9f9b99195"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"mssql": {
+				"schema": ""
+			}
+		},
+		"55e9ce5d-f016-4334-ac2c-7378ac7bb0b0": {
+			"id": "55e9ce5d-f016-4334-ac2c-7378ac7bb0b0",
+			"visible": true,
+			"name": "Exercitiu_afectiune",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "22fac4e4-5b90-4cc2-8462-a61c42da6f1a",
+					"name": "id_exAfectiune",
+					"datatype": "int",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": "",
+					"fk": false
+				},
+				{
+					"id": "ab3fcb02-2ebb-4241-8169-23223b2c0718",
+					"name": "id_exercitiu",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				},
+				{
+					"id": "19c48cdc-c710-40c3-b2bf-ce57aaaecd10",
+					"name": "id_afectiune",
+					"datatype": "int",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"mssql": {
+						"computed": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"a2a67183-dbbe-4b67-993c-32f8dc5aca0f",
+				"b66918e6-4f45-41a2-ab49-3b9417f41dfb"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "2b0a0601-9ccb-43e7-8ccd-f9e6f0af70f4",
+					"name": "table1_pkey8",
+					"isPk": true,
+					"mssql": {
+						"clustered": true
+					},
+					"cols": []
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"mssql": {
+				"schema": ""
+			}
+		}
+	},
+	"relations": {
+		"9dc8393f-b7db-468c-8b40-0b822bcb4fdb": {
+			"id": "9dc8393f-b7db-468c-8b40-0b822bcb4fdb",
+			"visible": true,
+			"name": "Analiza_posturii_Utilizatori_id_user_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "cbefa4c9-ff38-4ce5-8924-4649c8080d45",
+			"parent": "05952d01-7377-49c4-ada6-bcea6e4815bf",
+			"child": "584fa160-2560-40f4-afa0-fc2b60525e44",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "14aea600-360e-4bf4-8f02-6b79c52c3a36",
+					"parentcol": "61117c5f-024f-41a9-b76b-7fea3ba9fe36",
+					"childcol": "25f94c24-c7bf-43d6-afa4-978bce3183a9"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"70acd04d-f753-443b-b270-dcdc478d8c5d": {
+			"id": "70acd04d-f753-443b-b270-dcdc478d8c5d",
+			"visible": true,
+			"name": "Jurnal_alimentar_Utilizatori_id_user_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "cbefa4c9-ff38-4ce5-8924-4649c8080d45",
+			"parent": "05952d01-7377-49c4-ada6-bcea6e4815bf",
+			"child": "0a4f7102-cfbe-4ff2-a79a-e7d5125aa9d1",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "4ccdcdf7-19e7-4811-9ac5-4f9ed93d8428",
+					"parentcol": "61117c5f-024f-41a9-b76b-7fea3ba9fe36",
+					"childcol": "e2c5c2d2-7fa7-4bb1-862d-6299e6bf5a5d"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"3e6d3eb5-aca5-45fa-850f-9b8d1753c868": {
+			"id": "3e6d3eb5-aca5-45fa-850f-9b8d1753c868",
+			"visible": true,
+			"name": "Masa_Jurnal_alimentar_id_jurnal_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "31f0ff02-ca66-4f14-b976-7301702caff4",
+			"parent": "0a4f7102-cfbe-4ff2-a79a-e7d5125aa9d1",
+			"child": "245caef4-6905-4897-a4dc-a9d4956d52ad",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "1e955979-7706-4de7-acd9-30dedcf5b8ef",
+					"parentcol": "d3fd64dc-bad0-47ba-9779-78dbeac8e28e",
+					"childcol": "4a218b4a-a3eb-4e67-9cac-d13836f55797"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"789a062d-ff6d-4e9c-a279-88574fbf0dc2": {
+			"id": "789a062d-ff6d-4e9c-a279-88574fbf0dc2",
+			"visible": true,
+			"name": "Aliment_Masa_id_masa_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "ae868bc6-5dfe-4a9f-9398-c9bb5f37f84d",
+			"parent": "245caef4-6905-4897-a4dc-a9d4956d52ad",
+			"child": "e199c54b-50a5-4f02-b3e1-e89690d18b68",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "f19bb2ae-bff8-4286-8599-5a517aeb32a7",
+					"parentcol": "3364c9ff-2f79-4ba3-87e3-495ce9d5e2e5",
+					"childcol": "5c3b58ab-aea5-4e04-b204-7b2c83b3241e"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"3db92899-8d96-4f68-8d5b-93a27389a3a8": {
+			"id": "3db92899-8d96-4f68-8d5b-93a27389a3a8",
+			"visible": true,
+			"name": "Analiza_posturii_Lista_exercitii_id_lista_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "87566348-5ac2-47cd-85d8-6b6d69b7ae59",
+			"parent": "a63a39f2-6785-4784-bbda-614750566053",
+			"child": "584fa160-2560-40f4-afa0-fc2b60525e44",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "715f0491-809c-4ee8-a72d-6f586c7e38fa",
+					"parentcol": "8cbc4556-d602-4ceb-991b-6e951cce27cc",
+					"childcol": "6af12ccd-16b6-41be-a74d-b4c403d3199e"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"a2a67183-dbbe-4b67-993c-32f8dc5aca0f": {
+			"id": "a2a67183-dbbe-4b67-993c-32f8dc5aca0f",
+			"visible": true,
+			"name": "Exercitiu_afectiune_Exercitiu_id-exercitiu_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "91d5cc1f-8e10-4e89-85a7-a7ba3fe7707e",
+			"parent": "dafc571f-c3ee-4a8e-813a-1fad7ae1e86a",
+			"child": "55e9ce5d-f016-4334-ac2c-7378ac7bb0b0",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "8512d57f-4745-4919-a5ec-36391fd33b9d",
+					"parentcol": "c4a7862f-3f03-4367-a25a-baa9f9b99195",
+					"childcol": "ab3fcb02-2ebb-4241-8169-23223b2c0718"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"b66918e6-4f45-41a2-ab49-3b9417f41dfb": {
+			"id": "b66918e6-4f45-41a2-ab49-3b9417f41dfb",
+			"visible": true,
+			"name": "Exercitiu_afectiune_Afectiuni_id_afectiune_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "5f9ef8c5-cad0-4fbe-b41b-e26a7117d15b",
+			"parent": "62afded6-074e-44df-9fcb-06fd36e034c6",
+			"child": "55e9ce5d-f016-4334-ac2c-7378ac7bb0b0",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "60627f08-cacd-4859-a721-533138039d23",
+					"parentcol": "e7c264b7-a00e-43ad-a1e0-1ce7d7351c1e",
+					"childcol": "19c48cdc-c710-40c3-b2bf-ce57aaaecd10"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"5c741f73-8281-49ff-b3f9-05d6a7250d79": {
+			"id": "5c741f73-8281-49ff-b3f9-05d6a7250d79",
+			"visible": true,
+			"name": "Lista_exercitii_Afectiuni_id_afectiune_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "5f9ef8c5-cad0-4fbe-b41b-e26a7117d15b",
+			"parent": "62afded6-074e-44df-9fcb-06fd36e034c6",
+			"child": "a63a39f2-6785-4784-bbda-614750566053",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "28c9875d-6680-43c3-9cd9-2d2a8e516bda",
+					"parentcol": "e7c264b7-a00e-43ad-a1e0-1ce7d7351c1e",
+					"childcol": "e92f2bf9-bc21-4a48-bb16-7ebfed1b020d"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		}
+	},
+	"notes": {},
+	"lines": {},
+	"model": {
+		"name": "Nutri-Balance V1",
+		"id": "a5606345-0ac8-42ab-b8bc-9b25292bd093",
+		"activeDiagram": "a8dc1b96-6895-4be7-9a53-51225cf14968",
+		"desc": "",
+		"path": "",
+		"type": "MSSQL",
+		"version": 1,
+		"parentTableInFkCols": true,
+		"caseConvention": "under",
+		"replaceSpace": "_",
+		"color": "transparent",
+		"sideSelections": true,
+		"isDirty": true,
+		"storedin": {
+			"major": 8,
+			"minor": 5,
+			"extra": 1
+		},
+		"laststoredin": {
+			"major": 8,
+			"minor": 5,
+			"extra": 1
+		},
+		"writeFileParam": false,
+		"authorName": "",
+		"companyDetails": "",
+		"companyUrl": "",
+		"def_coltopk": true,
+		"mssql": {
+			"schema": ""
+		},
+		"sqlSettings": {
+			"wrapLines": true,
+			"wrapOffset": 80,
+			"indent": true,
+			"indentationString": "spaces",
+			"indentationSize": 2,
+			"limitItemsOnLine": true,
+			"maxListItemsOnLine": 3,
+			"statementDelimiter": "GO",
+			"routineDelimiter": ";",
+			"keywordCase": "upper",
+			"identiferCase": "original",
+			"includeSchema": "always",
+			"quotation": "if_needed",
+			"includeGeneratedNames": "always",
+			"quotationType": "square_brackets"
+		},
+		"nameAutoGeneration": {
+			"keys": true,
+			"indexes": true,
+			"relations": true
+		},
+		"connectionVersion": "",
+		"lastSaved": 1728942792387
+	},
+	"otherObjects": {},
+	"diagrams": {
+		"a8dc1b96-6895-4be7-9a53-51225cf14968": {
+			"name": "Main Diagram",
+			"description": "",
+			"id": "a8dc1b96-6895-4be7-9a53-51225cf14968",
+			"keysgraphics": true,
+			"linegraphics": "detailed",
+			"zoom": 1,
+			"background": "transparent",
+			"lineColor": "transparent",
+			"isOpen": true,
+			"main": true,
+			"diagramItems": {
+				"05952d01-7377-49c4-ada6-bcea6e4815bf": {
+					"referencedItemId": "05952d01-7377-49c4-ada6-bcea6e4815bf",
+					"x": 45,
+					"y": 30,
+					"gHeight": 153,
+					"gWidth": 197,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"584fa160-2560-40f4-afa0-fc2b60525e44": {
+					"referencedItemId": "584fa160-2560-40f4-afa0-fc2b60525e44",
+					"x": 390,
+					"y": 30,
+					"gHeight": 171,
+					"gWidth": 298,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"0a4f7102-cfbe-4ff2-a79a-e7d5125aa9d1": {
+					"referencedItemId": "0a4f7102-cfbe-4ff2-a79a-e7d5125aa9d1",
+					"x": 441,
+					"y": 666,
+					"gHeight": 189,
+					"gWidth": 224,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"245caef4-6905-4897-a4dc-a9d4956d52ad": {
+					"referencedItemId": "245caef4-6905-4897-a4dc-a9d4956d52ad",
+					"x": 763,
+					"y": 657,
+					"gHeight": 171,
+					"gWidth": 193,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"e199c54b-50a5-4f02-b3e1-e89690d18b68": {
+					"referencedItemId": "e199c54b-50a5-4f02-b3e1-e89690d18b68",
+					"x": 1037,
+					"y": 639,
+					"gHeight": 207,
+					"gWidth": 193,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"a63a39f2-6785-4784-bbda-614750566053": {
+					"referencedItemId": "a63a39f2-6785-4784-bbda-614750566053",
+					"x": 791,
+					"y": 100,
+					"gHeight": 99,
+					"gWidth": 192,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"62afded6-074e-44df-9fcb-06fd36e034c6": {
+					"referencedItemId": "62afded6-074e-44df-9fcb-06fd36e034c6",
+					"x": 1048,
+					"y": 114,
+					"gHeight": 81,
+					"gWidth": 192,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"dafc571f-c3ee-4a8e-813a-1fad7ae1e86a": {
+					"referencedItemId": "dafc571f-c3ee-4a8e-813a-1fad7ae1e86a",
+					"x": 427,
+					"y": 406,
+					"gHeight": 135,
+					"gWidth": 272,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"55e9ce5d-f016-4334-ac2c-7378ac7bb0b0": {
+					"referencedItemId": "55e9ce5d-f016-4334-ac2c-7378ac7bb0b0",
+					"x": 764,
+					"y": 392,
+					"gHeight": 81,
+					"gWidth": 197,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				}
+			},
+			"scroll": {
+				"x": 0,
+				"y": 0
+			},
+			"type": "erd",
+			"showHorizontal": true,
+			"showDescriptions": true,
+			"showIndicators": true,
+			"showProgress": true,
+			"lineWidth": "2",
+			"boxSize": "0",
+			"boxSpacing": "2",
+			"boxAlign": "center",
+			"showIndicatorCaptions": true,
+			"showEstimatedSize": false,
+			"showSchemaContainer": true,
+			"showEmbeddedInParents": true,
+			"showCardinalityCaptions": true,
+			"showRelationshipNames": false,
+			"showLineCaptions": false,
+			"showColumns": true,
+			"showColumnDataTypes": true,
+			"showSampleData": false,
+			"showTableIndexes": true,
+			"showTableDescriptions": false,
+			"showRelations": true,
+			"backgroundImage": "na",
+			"descriptionsColor": "transparent",
+			"embeddedSpacing": "2",
+			"showMainIcon": true,
+			"showLabels": true,
+			"showCustomizations": false
+		}
+	},
+	"diagramsOrder": [],
+	"order": [
+		"05952d01-7377-49c4-ada6-bcea6e4815bf",
+		"584fa160-2560-40f4-afa0-fc2b60525e44",
+		"0a4f7102-cfbe-4ff2-a79a-e7d5125aa9d1",
+		"245caef4-6905-4897-a4dc-a9d4956d52ad",
+		"e199c54b-50a5-4f02-b3e1-e89690d18b68",
+		"a63a39f2-6785-4784-bbda-614750566053",
+		"62afded6-074e-44df-9fcb-06fd36e034c6",
+		"dafc571f-c3ee-4a8e-813a-1fad7ae1e86a",
+		"55e9ce5d-f016-4334-ac2c-7378ac7bb0b0",
+		"9dc8393f-b7db-468c-8b40-0b822bcb4fdb",
+		"70acd04d-f753-443b-b270-dcdc478d8c5d",
+		"3e6d3eb5-aca5-45fa-850f-9b8d1753c868",
+		"789a062d-ff6d-4e9c-a279-88574fbf0dc2",
+		"3db92899-8d96-4f68-8d5b-93a27389a3a8",
+		"a2a67183-dbbe-4b67-993c-32f8dc5aca0f",
+		"b66918e6-4f45-41a2-ab49-3b9417f41dfb",
+		"5c741f73-8281-49ff-b3f9-05d6a7250d79"
+	],
+	"collapsedTreeItems": [],
+	"reverseStats": {}
+}

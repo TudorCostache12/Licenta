@@ -1,0 +1,7 @@
+Filtre pentru imagini la alegere:
+FRONTAL:
+ - simplu (doar linii de la joint la joint si unghiuri)
+ - adaugare linii ca unesc mijloacele sgmentelor trase deja pentru afisarea unui aliniament
+ - aliniamentul torso-ului (unghiul direct intre coapse si umeri)
+ - calcularea unui scor pe baza unghiurilor sau a aliniamentului
+ -afisarea unghiurilor pe imagine??
