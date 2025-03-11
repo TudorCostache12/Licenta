@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing</title>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <input type="file" id="imageUpload">
+    <button onclick="uploadImage()">Upload & Process</button>
+
+    <h2>Processed Image:</h2>
+    <img id="processedImage" style="max-width: 500px; display: none;">
+
+    <script>
+        async function uploadImage() {
+            let fileInput = document.getElementById("imageUpload");
+            let formData = new FormData();
+            formData.append("file", fileInput.files[0]);
+
+            let response = await fetch("http://127.0.0.1:8000/upload/", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                let result = await response.json(); // Primim răspunsul JSON cu numele imaginii
+                let processedFileName = result.processed_image;
+
+                // Folosim URL-ul pentru a accesa imaginea procesată
+                console.log("Răspuns API:", result);
+                console.log("Image path:", processedFileName);
+
+                let processedImg = document.getElementById("processedImage");
+                console.log("Before displaying:", processedImg.style.display);
+                processedImg.src = `http://127.0.0.1:8000${processedFileName}`;  // Modifică pentru a obține imaginea procesată
+                processedImg.style.display = "block";
+                console.log("After displaying:", processedImg.style.display);
+            } else {
+                alert("Image upload failed");
+            }
+        }
+    </script>
+</body>
+</html>
