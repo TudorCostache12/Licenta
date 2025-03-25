@@ -1,1 +1,18 @@
-<p>evaluare-statica works!</p>
+<h2>Incarcati imaginile pentru a fi evaluate</h2>
+<p>Analiza posturala fronatala:</p>
+<input type = "file" (change) = "selectareFisier($event)">
+
+<button (click) = "incarcareImagine(1)"> Incarcati imaginea frontala </button><br>
+
+
+<img *ngIf = "url_img_prelucrata_front" [src] = "url_img_prelucrata_front" style="max-width: 500px;">
+
+<br><br><br>
+
+<p>Analiza posturala din profil:</p>
+<input type = "file" (change) = "selectareFisier($event)">
+
+<button (click) = "incarcareImagine(2)"> Incarcati imaginea din profil </button><br>
+
+
+<img *ngIf = "url_img_prelucrata_profil" [src] = "url_img_prelucrata_profil" style="max-width: 500px;">

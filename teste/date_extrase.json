@@ -1,0 +1,105 @@
+{
+    "adancimi_front": [
+        37.3,
+        41.1,
+        32.1,
+        32.1,
+        35.9
+    ],
+    "medii_hip_shift_frontal": [
+        {
+            "coborare": -0.03,
+            "urcare": -0.05
+        },
+        {
+            "coborare": -0.37,
+            "urcare": 0.12
+        },
+        {
+            "coborare": -0.05,
+            "urcare": -0.25
+        },
+        {
+            "coborare": 0.01,
+            "urcare": 0.5
+        },
+        {
+            "coborare": -0.09,
+            "urcare": 0.89
+        }
+    ],
+    "medii_diferenta_nivel_solduri": [
+        {
+            "coborare": -0.25,
+            "urcare": 0.06
+        },
+        {
+            "coborare": 0.03,
+            "urcare": 0.09
+        },
+        {
+            "coborare": 0.25,
+            "urcare": 0.39
+        },
+        {
+            "coborare": 0.48,
+            "urcare": 0.41
+        },
+        {
+            "coborare": 0.38,
+            "urcare": 0.11
+        }
+    ],
+    "medii_diferenta_nivel_solduri_z": [
+        {
+            "coborare": 5.46,
+            "urcare": 4.37
+        },
+        {
+            "coborare": 4.7,
+            "urcare": 5.04
+        },
+        {
+            "coborare": 5.19,
+            "urcare": 4.66
+        },
+        {
+            "coborare": 4.98,
+            "urcare": 4.55
+        },
+        {
+            "coborare": 5.1,
+            "urcare": 5.02
+        }
+    ],
+    "adancimi_profil": [
+        30.3,
+        37.3,
+        40.2,
+        38.3,
+        39.2
+    ],
+    "unghiuri_profil": {
+        "FLEXIE_SOLD": [
+            69.0,
+            87.98,
+            91.23,
+            94.63,
+            92.8
+        ],
+        "FLEXIE_GENUNCHI": [
+            90.88,
+            103.09,
+            106.92,
+            102.55,
+            102.69
+        ],
+        "UNGHI_TIBIE": [
+            52.59,
+            52.85,
+            51.45,
+            54.38,
+            54.38
+        ]
+    }
+}

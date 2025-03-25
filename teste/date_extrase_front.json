@@ -1,0 +1,47 @@
+[
+    {
+        "adancime": 45.4,
+        "deviatie_coborare": -0.51,
+        "deviatie_urcare": 0.54,
+        "dif_nivel_solduri_coborare": 0.07,
+        "dif_nivel_solduri_urcare": 0.29,
+        "dif_nivel_solduri_z_coborare": 4.12,
+        "dif_nivel_solduri_z_urcare": 4.89
+    },
+    {
+        "adancime": 35.9,
+        "deviatie_coborare": -0.41,
+        "deviatie_urcare": 0.36,
+        "dif_nivel_solduri_coborare": 0.11,
+        "dif_nivel_solduri_urcare": 0.35,
+        "dif_nivel_solduri_z_coborare": 4.86,
+        "dif_nivel_solduri_z_urcare": 4.94
+    },
+    {
+        "adancime": 33.9,
+        "deviatie_coborare": -0.21,
+        "deviatie_urcare": 1.36,
+        "dif_nivel_solduri_coborare": -0.12,
+        "dif_nivel_solduri_urcare": 0.16,
+        "dif_nivel_solduri_z_coborare": 5.06,
+        "dif_nivel_solduri_z_urcare": 5.15
+    },
+    {
+        "adancime": 35.4,
+        "deviatie_coborare": -0.33,
+        "deviatie_urcare": 0.59,
+        "dif_nivel_solduri_coborare": -0.06,
+        "dif_nivel_solduri_urcare": -0.02,
+        "dif_nivel_solduri_z_coborare": 5.27,
+        "dif_nivel_solduri_z_urcare": 5.09
+    },
+    {
+        "adancime": 39.4,
+        "deviatie_coborare": -0.39,
+        "deviatie_urcare": 1.71,
+        "dif_nivel_solduri_coborare": -0.14,
+        "dif_nivel_solduri_urcare": -0.02,
+        "dif_nivel_solduri_z_coborare": 5.13,
+        "dif_nivel_solduri_z_urcare": 5.05
+    }
+]

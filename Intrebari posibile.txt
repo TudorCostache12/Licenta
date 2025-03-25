@@ -1,0 +1,25 @@
+De ce ai vrut sa o faci aplicatie web in loc de mobil?
+
+. Accesibilitate și Compatibilitate
+Platforma web poate fi accesată de pe orice dispozitiv care dispune de un browser modern (desktop, laptop, tabletă, smartphone), fără a necesita instalarea unei aplicații.
+Nu este nevoie să dezvolți aplicații separate pentru diferite sisteme de operare (Android, iOS). Acest lucru reduce timpul și costurile de dezvoltare.
+2. Performanța necesară
+Procesarea imaginilor și analiza posturală pot necesita putere de procesare semnificativă. O platformă web poate rula procesarea pe server, ceea ce reduce cerințele de hardware pentru dispozitivul utilizatorului.
+Într-o aplicație mobilă, toate calculele ar trebui să fie efectuate local, ceea ce poate duce la probleme de performanță pe dispozitive mai vechi sau mai puțin puternice.
+3. Actualizări și mentenanță
+Actualizările unei platforme web sunt gestionate centralizat: utilizatorii au întotdeauna acces la ultima versiune a aplicației.
+Pentru o aplicație mobilă, actualizările trebuie distribuite prin intermediul magazinelor de aplicații (App Store, Google Play), ceea ce poate întârzia disponibilitatea acestora.
+4. Integrarea cu camere și dispozitive multiple
+Platformele web moderne permit accesarea camerelor de pe dispozitive prin intermediul WebRTC (o tehnologie acceptată pe scară largă de browserele moderne). Acest lucru face posibilă implementarea feed-urilor live pentru analiza exercițiilor fără probleme majore.
+O aplicație mobilă ar necesita permisiuni suplimentare, care pot varia în funcție de sistemul de operare și de configurația dispozitivului.
+5. Scalabilitate și integrare cu baze de date
+O platformă web permite gestionarea mai ușoară a datelor stocate și a analizei utilizatorilor prin utilizarea unui backend scalabil (cum ar fi servere bazate pe cloud).
+Integrarea cu baze de date mari, necesare pentru salvarea progresului utilizatorilor, este mai simplă și mai eficientă într-o arhitectură web.
+6. Acces global și colaborare
+Utilizatorii pot accesa platforma web de oriunde, ceea ce o face ideală pentru o comunitate de utilizatori care doresc să-și urmărească progresul sau să colaboreze cu antrenori la distanță.
+O aplicație mobilă ar putea avea bariere de compatibilitate pentru utilizatorii din regiuni diferite.
+7. Interfață mai complexă și personalizabilă
+O aplicație web poate oferi o interfață mai complexă și personalizabilă (grafice, rapoarte detaliate, analize comparative) fără limitările impuse de dimensiunea ecranului sau constrângerile sistemelor mobile.
+________________________________________________________________________________________________________________________
+
+
