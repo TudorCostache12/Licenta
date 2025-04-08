@@ -1,44 +1,7 @@
+
+<app-header></app-header>
 <button (click) = "pornireFeedLive()">Porneste analiza genuflexiunilor</button>
 
 <img *ngIf = "url_frame_prelucrat" [src] = "url_frame_prelucrat" style = "max-width: 500px;">
 
-<div>
-    <table mat-table [dataSource]="date_extrase">
-        <ng-container matColumnDef="adancime">
-            <th mat-header-cell *matHeaderCellDef> Adancime </th>
-            <td mat-cell *matCellDef="let element">{{element.adancime}}</td>
-        </ng-container>
-
-        <ng-container matColumnDef="deviatie_coborare">
-            <th mat-header-cell *matHeaderCellDef> Deviatia soldurilor (coborare) </th>
-            <td mat-cell *matCellDef="let element">{{element.deviatie_coborare}}</td>
-        </ng-container>
-
-        <ng-container matColumnDef="deviatie_urcare">
-            <th mat-header-cell *matHeaderCellDef> Deviatia soldurilor (urcare) </th>
-            <td mat-cell *matCellDef="let element">{{element.deviatie_urcare}}</td>
-        </ng-container>
-
-        <ng-container matColumnDef="dif_nivel_solduri_coborare">
-            <th mat-header-cell *matHeaderCellDef> Diferenta de nivel a soldurilor (coborare) </th>
-            <td mat-cell *matCellDef="let element">{{element.dif_nivel_solduri_coborare}}</td>
-        </ng-container>
-
-        <ng-container matColumnDef="dif_nivel_solduri_urcare">
-            <th mat-header-cell *matHeaderCellDef> Diferenta de nivel a soldurilor (urcare) </th>
-            <td mat-cell *matCellDef="let element">{{element.dif_nivel_solduri_urcare}}</td>
-        </ng-container>
-
-        <ng-container matColumnDef="dif_nivel_solduri_z_coborare">
-            <th mat-header-cell *matHeaderCellDef> Diferenta de nivelcac a soldurilor (coborare) </th>
-            <td mat-cell *matCellDef="let element">{{element.dif_nivel_solduri_z_coborare}}</td>
-        </ng-container>
-
-        <ng-container matColumnDef="dif_nivel_solduri_z_urcare">
-            <th mat-header-cell *matHeaderCellDef> Diferenta de nivel a soldurilor (urcare) </th>
-            <td mat-cell *matCellDef="let element">{{element.dif_nivel_solduri_z_urcare}}</td>
-        </ng-container>
-        <tr mat-header-row *matHeaderRowDef="coloane"></tr>
-        <tr mat-row *matRowDef="let myRowData; columns: coloane"></tr>
-    </table>
-</div>
+<p *ngIf = "evaluare">Evaluarea a fost realizată cu succes.  <a (click)="navigareSpreRezultate()">Click aici pentru a vedea rezultatele</a></p>

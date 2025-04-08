@@ -1,0 +1,77 @@
+<div *ngIf="imagine_front && imagine_profil">
+    <h3>Imagini rezultate</h3>
+    <div>
+      <h4>Imagine Front:</h4>
+      <img [src]="imagine_front" alt="Imagine Front" style="width: 100%; max-width: 500px;"/>
+
+      <div>
+        <table mat-table [dataSource]="rezultate">
+            <ng-container matColumnDef="diferenta_urechi">
+                <th mat-header-cell *matHeaderCellDef> Diferenta nivel urechi </th>
+                <td mat-cell *matCellDef="let element">{{element.diferenta_urechi}}</td>
+            </ng-container>
+    
+            <ng-container matColumnDef="diferenta_umeri">
+                <th mat-header-cell *matHeaderCellDef> Diferenta nivel umeri </th>
+                <td mat-cell *matCellDef="let element">{{element.diferenta_umeri}}</td>
+            </ng-container>
+    
+            <ng-container matColumnDef="diferenta_solduri">
+                <th mat-header-cell *matHeaderCellDef> Diferenta nivel solduri </th>
+                <td mat-cell *matCellDef="let element">{{element.diferenta_solduri}}</td>
+            </ng-container>
+    
+            <ng-container matColumnDef="diferenta_genunchi">
+                <th mat-header-cell *matHeaderCellDef> Diferenta nivel genunchi </th>
+                <td mat-cell *matCellDef="let element">{{element.diferenta_genunchi}}</td>
+            </ng-container>
+    
+            <ng-container matColumnDef="diferenta_glezne">
+                <th mat-header-cell *matHeaderCellDef> Diferenta nivel glezne </th>
+                <td mat-cell *matCellDef="let element">{{element.diferenta_glezne}}</td>
+            </ng-container>
+    
+            <tr mat-header-row *matHeaderRowDef="coloane_front"></tr>
+            <tr mat-row *matRowDef="let myRowData; columns: coloane_front"></tr>
+        </table>
+    </div>
+
+    </div>
+    <div>
+      <h4>Imagine Profil:</h4>
+      <img [src]="imagine_profil" alt="Imagine Profil" style="width: 100%; max-width: 500px;"/>
+
+      <table mat-table [dataSource]="rezultate">
+        <ng-container matColumnDef="umeri">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel urechi </th>
+            <td mat-cell *matCellDef="let element">{{element.umeri}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="solduri">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel umeri </th>
+            <td mat-cell *matCellDef="let element">{{element.solduri}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="genunchi">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel solduri </th>
+            <td mat-cell *matCellDef="let element">{{element.genunchi}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="glezne">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel genunchi </th>
+            <td mat-cell *matCellDef="let element">{{element.glezne}}</td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="coloane_profil"></tr>
+        <tr mat-row *matRowDef="let myRowData; columns: coloane_profil"></tr>
+    </table>
+
+    </div>
+  </div>
+
+  <!-- Mesaj de eroare -->
+<div *ngIf="!rezultate">
+    <p>Eroare: Nu au fost găsite rezultate pentru acest test.</p>
+</div>
+

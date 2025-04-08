@@ -1,0 +1,10 @@
+<div class="container">
+    <h2>Creare Cont</h2>
+    <input type="email" placeholder="Email" (input) = "updateMail($event)"><br>
+    <input type="password" placeholder="Parola" (input) = "updateParola($event)"><br>
+    <input type="text" placeholder="Username" (input) = "updateUserName($event)"><br>
+    <button (click)="creareCont()">Creează Cont</button>
+    <p>Ai deja un cont? <a routerLink="/logare-cont">Autentifică-te aici</a></p>
+    <p>{{ mesaj_creare }}</p>
+  </div><br>
+  

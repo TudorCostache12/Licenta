@@ -69,3 +69,6 @@ https://www.ptpioneer.com/personal-training/certifications/study/postural-assess
 
 [16]:
 https://scoliosisjournal.biomedcentral.com/articles/10.1186/s13013-018-0151-5?utm_source=chatgpt.com
+
+[17]
+https://books.google.ro/books?hl=en&lr=&id=1TgzEAAAQBAJ&oi=fnd&pg=PT21&dq=angular+in+web+development&ots=ygHWQ9yRC5&sig=c7Pw-BOlbuQRiF9lJ99O01gK8f4&redir_esc=y#v=onepage&q=angular%20in%20web%20development&f=false

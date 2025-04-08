@@ -1,74 +1,106 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { NgIf } from '@angular/common';
+import {MatTableModule} from '@angular/material/table';
+import { HeaderComponent } from '../components/header/header.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-evaluare-statica',
-  imports: [NgIf],
+  imports: [NgIf, MatTableModule, HeaderComponent],
   templateUrl: './evaluare-statica.component.html',
   styleUrl: './evaluare-statica.component.css'
 })
 export class EvaluareStaticaComponent {
-  fisier_upload : File = new File([], "");
-  url_upload : string | null = null;
+
+  fisier_upload_front : File = new File([], "");
+  fisier_upload_profil : File = new File([], "");
+  url_upload_front : string | null = null;
+  url_upload_profil : string | null = null;
   url_img_prelucrata_front : string | null = null;
   url_img_prelucrata_profil : string | null = null;
+  date_postura : any;
+  evaluare : boolean = false;
+  coloane_front : string[] = ["diferenta_urechi", "diferenta_umeri", "diferenta_solduri", "diferenta_genunchi", "diferenta_glezne"]
 
 
-  constructor(private http_client : HttpClient) {}
+  constructor(private http_client : HttpClient, private router: Router) {}
+  
 
-  selectareFisier(event : any)
+  selectareFisier(event : any, tip_img : number)
   {
-    if(this.fisier_upload)
+    if(this.fisier_upload_front || this.fisier_upload_profil)
     {
-      this.fisier_upload = event.target.files[0];
-      this.url_upload = URL.createObjectURL(this.fisier_upload);
+      if (tip_img == 1)
+      {
+        this.fisier_upload_front = event.target.files[0];
+        this.url_upload_front = URL.createObjectURL(this.fisier_upload_front);
+      }
+        
+      else
+      {
+        this.fisier_upload_profil = event.target.files[0];
+        this.url_upload_profil = URL.createObjectURL(this.fisier_upload_profil);
+      }
+
+        
     }
     else
       alert("A avut loc o problema! fisierul nu poate fi deschis sau nu exista.")
   }
 
 
-  incarcareImagine(tip_img : number)
+  incarcareImagini()
   {
-    if (this.fisier_upload.size > 0)
+    if (this.fisier_upload_front.size > 0 && this.fisier_upload_profil.size > 0)
     {
-      const form_imagine = new FormData();
-      form_imagine.append('imagine_incarcata', this.fisier_upload, this.fisier_upload.name);
-      form_imagine.append('tip_img', tip_img.toString());
+      const form_imagini = new FormData();
+      form_imagini.append('imagine_front', this.fisier_upload_front, this.fisier_upload_front.name);
+      form_imagini.append('imagine_profil', this.fisier_upload_profil, this.fisier_upload_profil.name);
 
-      this.http_client.post<any>('http://127.0.0.1:8000/upload/', form_imagine).subscribe(
+      const token = localStorage.getItem('token');
+      const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+
+      console.log('Token:', token);  // Verifică dacă tokenul există
+      console.log(localStorage.getItem('token'));
+      if (!token) 
+      {
+        console.error('Nu există token valid!');
+        return;
+      }
+
+      this.http_client.post<any>('http://127.0.0.1:8000/upload/', form_imagini, { headers }).subscribe(
         next_upload  => 
         {
-          console.log("Imagine incarcata cu succes: ", next_upload);
-          this.incarcareImaginePrelucrata(tip_img);
+          console.log("Imagini incarcate cu succes: ", next_upload);
+          this.evaluare = true;
         }
         
       )
       
     }
-    else alert("Nu ati selectat nicio imagine!")
+    else alert("Nu ati selectat ambele imagini!")
   }
 
-  incarcareImaginePrelucrata(tip_img : number)
-  {
-    if(this.fisier_upload.size > 0)
-    {
-      const nume_imagine = this.fisier_upload.name;
-      const path_img_procesata = `http://127.0.0.1:8000/processed/processed_${nume_imagine}`
-      this.http_client.get<any>(path_img_procesata, {responseType : 'blob' as 'json'}).subscribe(
-        next_procesare=>
-        {
-          console.log("imagine prelucrata cu succes: ", next_procesare)
-          if(tip_img == 1)
-            this.url_img_prelucrata_front = path_img_procesata
-          else if(tip_img == 2)
-            this.url_img_prelucrata_profil = path_img_procesata
-        }
-      )
-    }
-  }
   
+
+
+  extragereDatePostura()
+  {
+    this.http_client.get<any>('http://127.0.0.1:8000/distante_postura_statica/').subscribe(
+      data => 
+      {
+        console.log(data);
+        this.date_postura = [data];
+      }
+    )
+  }
+
+  navigareSpreRezultate()
+  {
+    localStorage.setItem("evaluareSpreRezultate", 'true');
+    this.router.navigate(['/rezultate-evaluare-statica']);
+  }
 
 
 }

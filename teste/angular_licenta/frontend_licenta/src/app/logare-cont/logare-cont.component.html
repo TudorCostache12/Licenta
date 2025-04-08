@@ -1,0 +1,8 @@
+<div class="container">
+    <h2>Intra in cont</h2>
+    <input type="password" placeholder="Parola" (input) = "updateParola($event)"><br>
+    <input type="text" placeholder="Username" (input) = "updateUserName($event)"><br>
+    <button (click)="logareCont()">Creează Cont</button>
+    <p>Nu ai încă un cont? <a routerLink="/creare-cont">Creează unul aici</a></p>
+    <p>{{ mesaj_logare }}</p>
+  </div>

@@ -1,0 +1,71 @@
+<div *ngIf="ok">
+    <table mat-table [dataSource]="rezultate">
+        <ng-container matColumnDef="adancime_front">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel urechi </th>
+            <td mat-cell *matCellDef="let element">{{element.adancime_front}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="deviatie_coborare">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel umeri </th>
+            <td mat-cell *matCellDef="let element">{{element.deviatie_coborare}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="deviatie_urcare">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel solduri </th>
+            <td mat-cell *matCellDef="let element">{{element.deviatie_urcare}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="dif_nivel_solduri_coborare">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel genunchi </th>
+            <td mat-cell *matCellDef="let element">{{element.dif_nivel_solduri_coborare}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="dif_nivel_solduri_urcare">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel glezne </th>
+            <td mat-cell *matCellDef="let element">{{element.dif_nivel_solduri_urcare}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="dif_nivel_solduri_z_coborare">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel glezne </th>
+            <td mat-cell *matCellDef="let element">{{element.dif_nivel_solduri_z_coborare}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="dif_nivel_solduri_z_urcare">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel glezne </th>
+            <td mat-cell *matCellDef="let element">{{element.dif_nivel_solduri_z_urcare}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="coloane_front"></tr>
+        <tr mat-row *matRowDef="let myRowData; columns: coloane_front"></tr>
+    </table>
+
+
+    <table mat-table [dataSource]="rezultate">
+        <ng-container matColumnDef="adancime_profil">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel urechi </th>
+            <td mat-cell *matCellDef="let element">{{element.adancime_profil}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="flexie_sold">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel umeri </th>
+            <td mat-cell *matCellDef="let element">{{element.flexie_sold}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="flexie_genunchi">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel solduri </th>
+            <td mat-cell *matCellDef="let element">{{element.flexie_genunchi}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="dorsiflexie_glezna">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel genunchi </th>
+            <td mat-cell *matCellDef="let element">{{element.dorsiflexie_glezna}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="coloane_profil"></tr>
+        <tr mat-row *matRowDef="let myRowData; columns: coloane_profil"></tr>
+    </table>
+</div>
+
+<div *ngIf="!ok">
+    <p>Eroare: Nu au fost găsite rezultate pentru aceasta evaluare a genuflexiunilor.</p>
+</div>

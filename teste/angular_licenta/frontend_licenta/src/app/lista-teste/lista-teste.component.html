@@ -1,0 +1,40 @@
+
+<app-header></app-header>
+
+<h2>Evaluare genuflexiuni</h2>
+<table mat-table [dataSource]="evaluari_genuflexiuni">
+
+  <ng-container matColumnDef="tip">
+    <th mat-header-cell *matHeaderCellDef> Tip test </th>
+    <td mat-cell *matCellDef="let element"> {{element.tip}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="datetime">
+    <th mat-header-cell *matHeaderCellDef> Data upload </th>
+    <td mat-cell *matCellDef="let element"> {{element.datetime}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="coloane"></tr>
+  <tr mat-row *matRowDef="let row; columns: coloane;"
+    (click)="navigareSpreRezultate(row)" 
+    style="cursor: pointer;"></tr>
+</table>
+
+<h2>Analiza postura</h2>
+<table mat-table [dataSource]="teste_postura">
+
+    <ng-container matColumnDef="tip">
+        <th mat-header-cell *matHeaderCellDef> Tip test </th>
+        <td mat-cell *matCellDef="let element"> {{element.tip}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="datetime">
+        <th mat-header-cell *matHeaderCellDef> Data upload </th>
+        <td mat-cell *matCellDef="let element"> {{element.datetime}} </td>
+      </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="coloane"></tr>
+  <tr mat-row *matRowDef="let row; columns: coloane;"
+    (click)="navigareSpreRezultate(row)" 
+      style="cursor: pointer;"></tr>
+</table>

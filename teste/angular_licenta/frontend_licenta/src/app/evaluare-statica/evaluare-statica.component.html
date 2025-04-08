@@ -1,18 +1,54 @@
+
+<app-header></app-header>
+
 <h2>Incarcati imaginile pentru a fi evaluate</h2>
 <p>Analiza posturala fronatala:</p>
-<input type = "file" (change) = "selectareFisier($event)">
-
-<button (click) = "incarcareImagine(1)"> Incarcati imaginea frontala </button><br>
+<input type = "file" (change) = "selectareFisier($event, 1)">
 
 
-<img *ngIf = "url_img_prelucrata_front" [src] = "url_img_prelucrata_front" style="max-width: 500px;">
+<img *ngIf = "url_upload_front" [src] = "url_upload_front" style="max-width: 500px;">
 
 <br><br><br>
 
 <p>Analiza posturala din profil:</p>
-<input type = "file" (change) = "selectareFisier($event)">
-
-<button (click) = "incarcareImagine(2)"> Incarcati imaginea din profil </button><br>
+<input type = "file" (change) = "selectareFisier($event, 2)">
 
 
-<img *ngIf = "url_img_prelucrata_profil" [src] = "url_img_prelucrata_profil" style="max-width: 500px;">
+
+<img *ngIf = "url_upload_profil" [src] = "url_upload_profil" style="max-width: 500px;">
+
+<button (click) = "incarcareImagini()"> Evaluare </button><br>
+
+<p *ngIf = "evaluare">Evaluarea a fost realizată cu succes.  <a (click)="navigareSpreRezultate()">Click aici pentru a vedea rezultatele</a></p>
+
+<!--<div>
+    <table mat-table [dataSource]="date_postura">
+        <ng-container matColumnDef="diferenta_urechi">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel urechi </th>
+            <td mat-cell *matCellDef="let element">{{element.diferenta_urechi}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="diferenta_umeri">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel umeri </th>
+            <td mat-cell *matCellDef="let element">{{element.diferenta_umeri}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="diferenta_solduri">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel solduri </th>
+            <td mat-cell *matCellDef="let element">{{element.diferenta_solduri}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="diferenta_genunchi">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel genunchi </th>
+            <td mat-cell *matCellDef="let element">{{element.diferenta_genunchi}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="diferenta_glezne">
+            <th mat-header-cell *matHeaderCellDef> Diferenta nivel glezne </th>
+            <td mat-cell *matCellDef="let element">{{element.diferenta_glezne}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="coloane_front"></tr>
+        <tr mat-row *matRowDef="let myRowData; columns: coloane_front"></tr>
+    </table>
+</div>-->
